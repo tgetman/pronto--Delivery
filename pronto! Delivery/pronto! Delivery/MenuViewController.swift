@@ -9,36 +9,46 @@
 import Foundation
 import UIKit
 
-class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
-    @IBOutlet weak var menuTableView: UITableView!
+class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let menuItems = ["Pizza", "Pasta", "Strombolli"]
     
+    @IBOutlet weak var tableView: UITableView!
+    
+    //listing all items
+    
+    var menuitems = ["Pizza", "Pasta"]
+    
+    var superhero = "SUPER"
+    
+    override func viewDidLoad() {
+        
+        //Lets do this
+        
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return menuItems.count
+        return self.menuitems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell =  UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        
-        let text = menuItems[indexPath.row]
-        
-        cell.textLabel?.text = text
-        
+        let cell = UITableViewCell()
+        cell.textLabel!.text = self.menuitems[indexPath.row]
         return cell
-        
     }
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.superhero = self.menuitems[indexPath.row]
+        self.performSegue(withIdentifier: "SegueToDetailViewController", sender: self)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let DetailViewController = segue.destination as! DetailViewController
+        DetailViewController.superhero = self.superhero
+
+
 }
+
 
 }

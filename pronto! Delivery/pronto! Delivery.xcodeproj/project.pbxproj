@@ -16,6 +16,7 @@
 		5CCA02131F7B39CE00D0D1D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CCA02111F7B39CE00D0D1D0 /* LaunchScreen.storyboard */; };
 		5CCA021E1F7B39CE00D0D1D0 /* pronto__DeliveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCA021D1F7B39CE00D0D1D0 /* pronto__DeliveryTests.swift */; };
 		5CCA02291F7B39CE00D0D1D0 /* pronto__DeliveryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCA02281F7B39CE00D0D1D0 /* pronto__DeliveryUITests.swift */; };
+		5CE7DA751F85CC1400BD7F88 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7DA741F85CC1400BD7F88 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		5CCA02241F7B39CE00D0D1D0 /* pronto! DeliveryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pronto! DeliveryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CCA02281F7B39CE00D0D1D0 /* pronto__DeliveryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pronto__DeliveryUITests.swift; sourceTree = "<group>"; };
 		5CCA022A1F7B39CE00D0D1D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CE7DA741F85CC1400BD7F88 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				5CCA02081F7B39CE00D0D1D0 /* AppDelegate.swift */,
 				5CCA020A1F7B39CE00D0D1D0 /* WelcomeViewController.swift */,
 				5C50D3131F7C5A980055A7C6 /* MenuViewController.swift */,
+				5CE7DA741F85CC1400BD7F88 /* DetailViewController.swift */,
 				5CCA020C1F7B39CE00D0D1D0 /* Main.storyboard */,
 				5CCA020F1F7B39CE00D0D1D0 /* Assets.xcassets */,
 				5CCA02111F7B39CE00D0D1D0 /* LaunchScreen.storyboard */,
@@ -273,6 +276,7 @@
 				5CCA020B1F7B39CE00D0D1D0 /* WelcomeViewController.swift in Sources */,
 				5C50D3141F7C5A980055A7C6 /* MenuViewController.swift in Sources */,
 				5CCA02091F7B39CE00D0D1D0 /* AppDelegate.swift in Sources */,
+				5CE7DA751F85CC1400BD7F88 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
